@@ -95,7 +95,8 @@ const images = [
   'o.png',
   'yay.png',
   'speed.png',
-  'jeff.png'
+  'jeff.png',
+  '882107d5402b12843758b6b6c86ae85a.jpg'
 ];
 
 let currentImageIndex = 0;
