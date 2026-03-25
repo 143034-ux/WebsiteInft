@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INFT op school | moderne visie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="blob"></div>
+
+  <nav class="navbar">
+    <div class="logo">⧩ INFT lab</div>
+    <div class="nav-links">
+
+      <button class="dark-toggle" id="darkmodeToggle"><i class="fas fa-moon"></i> <span>donker</span></button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <span class="chip">Wat houdt INFT in?</span>
+        <h1>
+          <span class="glitch-text" data-text="INFORMATIE">INFORMATIE</span><br>
+          <span class="glitch-text" data-text="TECHNOLOGIE">TECHNOLOGIE</span>
+        </h1>
+        <div class="hero-description">
+          INFT is het vak op school waar je alleen maar bezig bent met computers
+        </div>
+      </div>
+    </section>
+
+    <div class="hero-glow">
+      <p style="font-size: 1.6rem; font-weight: 400; max-width: 800px;">Informatica is het vak waar we alleen maar met computers werken. Dus daar leer je ook hoe je computer in elkaar zit, hoe het internet is elkaar zit en hoe je zelf dingen kunt bouwen. Hieronder zie je een paar voorbeelden van opdrachten die je kan verwachten bij het vak informatica</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card float">
+        <div class="card-icon"><i class="fas fa-code"></i></div>
+        <h3>Arduino programmeren</h3>
+        <p>Werken met arduino en leren hoe een breadboard werkt en hoe je alles connect maar het grote deel leer je programmeren</p>
+        <span class="pill">C & C++</span>
+        <span class="pill">Breadboard</span>
+        <span class="pill">algoritmes</span>
+      </div>
+      <div class="card float" style="animation-delay: 0.5s;">
+        <div class="card-icon"><i class="fas fa-database"></i></div>
+        <h3>Cybercrime</h3>
+        <p>Hoe werkt de wereld van cybercrime nou helemaal? Hier verdiepen we een beetje in het onderdeel cybercrime.</p>
+        <span class="pill">Soorten hackers</span>
+        <span class="pill">Wat is hacken nou echt</span>
+        <span class="pill">Hoe ga je het tegen</span>
+      </div>
+      <div class="card float" style="animation-delay: 1s;">
+        <div class="card-icon"><i class="fas fa-globe"></i></div>
+        <h3>Film opdracht</h3>
+        <p>Hier maak je een documentaire over iets wat je graag zou willen belichten aan andere mensen. Het Bestaat uit 3 fases: </p>
+        <span class="pill">Voorbereidings-Fase</span>
+        <span class="pill">Film-fase</span>
+        <span class="pill">Montage-Fase</span>
+      </div>
+    </div>
+
+    <div class="deepdive">
+      <h2 style="font-size: 2.5rem; font-weight: 600;">⊳ Hoe is een jaar opgedeeld? ⊲</h2>
+      <div class="toggle-switch">
+        <button class="toggle-btn active" id="btn1"> 3e Klas</button>
+        <button class="toggle-btn" id="btn2"> 4e Klas</button>
+        <button class="toggle-btn" id="btn3"> projecten</button>
+      </div>
+      <div id="dynamicText" class="inft-detail">
+        🧩 Je maakt kennis met websites bouwen, eenvoudige animaties en hoe een computer 'denkt'. Centraal: ontdekken en creëren.
+      </div>
+    </div>
+
+    <div class="quote-block">
+      <div style="display: flex; align-items: center; gap: 2rem; max-width: 900px; margin: 0 auto;">
+        <img src="foto/nein.png" alt="Profiel foto" style="width: 100px; height: 100px; border-radius: 20%; object-fit: cover; border: 3px solid #000000;">
+        <div style="text-align: left;">
+          <i class="fas fa-quote-right" style="font-size: 2rem; opacity: 0.5; margin-bottom: 0.5rem;"></i>
+          <span style="font-size: 2rem; font-style: italic; display: block;">Je bent nooit klaar met leren!</span>
+          <div style="margin-top:1rem; font-size:1rem; opacity:0.6;">— Luciano Socrates Aristoteles Shakespeare</div>
+        </div>
+      </div>
+    </div>
+
+    <section class="skills-section">
+      <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">vaardigheden die je opdoet</h2>
+      <div class="skill-row">
+        <span class="skill-name">Programmeren</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" id="skill1" data-width="50"></div></div>
+        <span class="skill-percent" id="perc1">0%</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">Leren Filmen</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" id="skill2" data-width="30,25"></div></div>
+        <span class="skill-percent" id="perc2">0%</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">Programmeren met arduino</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" id="skill3" data-width="10"></div></div>
+        <span class="skill-percent" id="perc3">0%</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">Creatief denken</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" id="skill4" data-width="9,75"></div></div>
+        <span class="skill-percent" id="perc4">0%</span>
+      </div>
+    </section>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 4rem 0;">
+      <div style="flex:1; min-width:200px;">
+        <h3><i class="fas fa-crown" style="color:#9f7aea;"></i> uniek</h3>
+        <p>Je hebt meer vrijheid dan bij andere vakken.</p>
+      </div>
+      <div style="flex:1; min-width:200px;">
+        <h3><i class="fas fa-rocket" style="color:#3b3bff;"></i> actueel</h3>
+        <p>Je hebt meer ruimte om te denken</p>
+      </div>
+      <div style="flex:1; min-width:200px;">
+        <h3><i class="fas fa-people-group"></i> samen</h3>
+        <p>Je werkt samen dus dat maakt het extra leuk.</p>
+      </div>
+    </div>
+
+    <footer style="display: flex; flex-direction: column; gap: 2rem;">
+      <div class="slideshow-container">
+        <img id="slideshow-image" class="slideshow-image" src="image1.png" alt="Slideshow afbeelding">
+      </div>
+      
+      <div class="slideshow-dots" id="slideshow-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+      
+      <!-- Footer tekst -->
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; margin-top: 1rem;">
+        <span>Gemaakt door Levi Zegwaard - Designed door Luciano Schaap</span>
+        <span>Gemaakt voor E. Van Laar</span>
+      </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
