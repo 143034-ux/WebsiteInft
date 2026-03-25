@@ -90,12 +90,12 @@ cards.forEach(c => {
 });
 
 const images = [
-  'foto/waat.png',  
-  'foto/ac.png', 
-  'foto/o.png',
-  'foto/yay.png',
-  'foto/speed.png',
-  'foto/jeff.png'
+  'waat.png',  
+  'ac.png', 
+  'o.png',
+  'yay.png',
+  'speed.png',
+  'jeff.png'
 ];
 
 let currentImageIndex = 0;
